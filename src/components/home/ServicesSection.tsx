@@ -32,6 +32,8 @@ export type ServicesTheme = {
   headingClass?: string;
   /** optional text/icon color class applied to the card CTA button */
   buttonTextClass?: string;
+  /** optional class applied to the section eyebrow */
+  eyebrowClass?: string;
 };
 
 export function ServicesSection({
@@ -130,7 +132,7 @@ export function ServicesSection({
     >
       <div className="mx-auto flex max-w-[1176px] flex-col items-center gap-16">
         <div className="mx-auto max-w-[640px] text-center">
-          <SectionEyebrow>{theme.eyebrow}</SectionEyebrow>
+          <SectionEyebrow className={theme.eyebrowClass}>{theme.eyebrow}</SectionEyebrow>
           <h2 className="mt-5 font-display text-[clamp(2rem,4.2vw,3rem)] font-medium leading-[1.16] tracking-[-0.06em]">
             {theme.heading}
           </h2>
