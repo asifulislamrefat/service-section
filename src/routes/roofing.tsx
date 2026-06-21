@@ -1,13 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Home, Wrench, CloudRain, Hammer, ShieldCheck } from "lucide-react";
 import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/components/home/ServicesSection";
+import roofingInstallation from "@/assets/roofing-installation.jpg";
 
 const services: ServiceItem[] = [
   {
     icon: Home,
     title: "Roof Replacement",
     body: "Full tear-offs and new installs in asphalt, metal, and tile — built to last decades.",
-    img: "https://images.unsplash.com/photo-1605152276897-4f618f831968?auto=format&fit=crop&w=1200&q=80",
+    img: roofingInstallation,
   },
   {
     icon: Wrench,
