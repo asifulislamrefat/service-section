@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { MessageCircle, X, Stethoscope, Dumbbell, Sparkles, Home } from "lucide-react";
+import { ToggleRight, X, Stethoscope, Dumbbell, Sparkles, Home } from "lucide-react";
 
 const pages = [
   { to: "/", label: "Medical", icon: Stethoscope },
@@ -47,7 +47,7 @@ export function FloatingNav() {
         aria-label={open ? "Close page menu" : "Open page menu"}
         className="grid size-14 place-items-center rounded-full bg-black text-white shadow-[0_12px_30px_-8px_rgba(0,0,0,0.5)] transition-transform hover:scale-105 active:scale-95"
       >
-        {open ? <X className="size-6" /> : <MessageCircle className="size-6" />}
+        {open ? <X className="size-6" /> : <ToggleRight className="size-6" />}
       </button>
     </div>
   );
