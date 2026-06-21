@@ -78,17 +78,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "author", content: "United Health" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Service Section" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Lovable App" },
-      { property: "og:title", content: "Lovable App" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "description", content: "Friendly Greetings is a web application that displays a greeting and allows for GitHub repository cloning and Figma integration." },
-      { property: "og:description", content: "Friendly Greetings is a web application that displays a greeting and allows for GitHub repository cloning and Figma integration." },
-      { name: "twitter:description", content: "Friendly Greetings is a web application that displays a greeting and allows for GitHub repository cloning and Figma integration." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/91172e38-19c9-470e-9213-8063d860e2dc/id-preview-a9509588--d7c1bef1-3402-4d0b-bbda-9d821548ad5b.lovable.app-1781976341456.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/91172e38-19c9-470e-9213-8063d860e2dc/id-preview-a9509588--d7c1bef1-3402-4d0b-bbda-9d821548ad5b.lovable.app-1781976341456.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
