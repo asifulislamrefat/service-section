@@ -7,7 +7,7 @@ const services: ServiceItem[] = [
     icon: Home,
     title: "Roof Replacement",
     body: "Full tear-offs and new installs in asphalt, metal, and tile — built to last decades.",
-    img: "https://images.unsplash.com/photo-1605152276897-4f618f831968?auto=format&fit=crop&w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1632759145355-8b8f3ab9c693?auto=format&fit=crop&w=1200&q=80",
   },
   {
     icon: Wrench,
