@@ -9,11 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RoofingRouteImport } from './routes/roofing'
 import { Route as FitnessRouteImport } from './routes/fitness'
 import { Route as AgencyRouteImport } from './routes/agency'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RoofingRoute = RoofingRouteImport.update({
   id: '/roofing',
   path: '/roofing',
@@ -40,12 +46,14 @@ export interface FileRoutesByFullPath {
   '/agency': typeof AgencyRoute
   '/fitness': typeof FitnessRoute
   '/roofing': typeof RoofingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/agency': typeof AgencyRoute
   '/fitness': typeof FitnessRoute
   '/roofing': typeof RoofingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +61,14 @@ export interface FileRoutesById {
   '/agency': typeof AgencyRoute
   '/fitness': typeof FitnessRoute
   '/roofing': typeof RoofingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/agency' | '/fitness' | '/roofing'
+  fullPaths: '/' | '/agency' | '/fitness' | '/roofing' | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/agency' | '/fitness' | '/roofing'
-  id: '__root__' | '/' | '/agency' | '/fitness' | '/roofing'
+  to: '/' | '/agency' | '/fitness' | '/roofing' | '/sitemap.xml'
+  id: '__root__' | '/' | '/agency' | '/fitness' | '/roofing' | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,10 +76,18 @@ export interface RootRouteChildren {
   AgencyRoute: typeof AgencyRoute
   FitnessRoute: typeof FitnessRoute
   RoofingRoute: typeof RoofingRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/roofing': {
       id: '/roofing'
       path: '/roofing'
@@ -107,6 +124,7 @@ const rootRouteChildren: RootRouteChildren = {
   AgencyRoute: AgencyRoute,
   FitnessRoute: FitnessRoute,
   RoofingRoute: RoofingRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
