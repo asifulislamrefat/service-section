@@ -43,7 +43,7 @@ const services: ServiceItem[] = [
 
 const theme: ServicesTheme = {
   eyebrow: "Train with us",
-  heading: <span className="text-white">Every workout. Every goal.<br />One studio.</span>,
+  heading: <span className="text-white">Every workout.<br />Every goal. One studio.</span>,
   sub: <span className="text-white/60">Strength, conditioning, and coaching built around how you actually want to move.</span>,
   sectionClass: "bg-[#0a0d0a]",
   panelClass: "bg-[#11150f]",
