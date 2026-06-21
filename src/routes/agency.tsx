@@ -4,6 +4,7 @@ import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/compone
 import uiuxImg from "@/assets/agency-uiux.jpg";
 import webdevImg from "@/assets/agency-webdev.jpg";
 import brandImg from "@/assets/agency-brand.jpg";
+import growthImg from "@/assets/agency-growth.jpg";
 
 const services: ServiceItem[] = [
   {
@@ -28,7 +29,7 @@ const services: ServiceItem[] = [
     icon: LineChart,
     title: "Growth Marketing",
     body: "Performance, SEO, and lifecycle campaigns that compound revenue.",
-    img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80",
+    img: growthImg,
   },
   {
     icon: Sparkles,
