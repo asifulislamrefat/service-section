@@ -1,13 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Palette, Code2, Megaphone, LineChart, Sparkles } from "lucide-react";
 import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/components/home/ServicesSection";
+import uiuxImg from "@/assets/agency-uiux.jpg";
 
 const services: ServiceItem[] = [
   {
     icon: Palette,
     title: "UI / UX Design",
     body: "Product-grade interfaces, design systems, and prototypes that ship.",
-    img: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1200&q=80",
+    img: uiuxImg,
   },
   {
     icon: Code2,
