@@ -11,8 +11,8 @@ export type ServiceItem = {
 export type ServicesTheme = {
   /** uppercase eyebrow label */
   eyebrow: string;
-  heading: string;
-  sub: string;
+  heading: React.ReactNode;
+  sub: React.ReactNode;
   /** outer section background (Tailwind class) */
   sectionClass: string;
   /** outer panel background (Tailwind class) — replaces bg-[#f2f2f2] */
