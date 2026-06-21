@@ -54,6 +54,7 @@ const theme: ServicesTheme = {
   accentStrong: "#b6f000",
   iconChipClass: "bg-[#c6ff3d] text-black",
   headingClass: "text-white",
+  buttonTextClass: "text-black",
 };
 
 export const Route = createFileRoute("/fitness")({
