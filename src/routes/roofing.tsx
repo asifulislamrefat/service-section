@@ -2,6 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Home, Wrench, CloudRain, Hammer, ShieldCheck } from "lucide-react";
 import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/components/home/ServicesSection";
 import roofingInstallation from "@/assets/roofing-installation.jpg";
+import roofingRepairs from "@/assets/roofing-repairs.jpg";
+import roofingGutters from "@/assets/roofing-gutters.jpg";
+import roofingStorm from "@/assets/roofing-storm.jpg";
+import roofingInspection from "@/assets/roofing-inspection.jpg";
 
 const services: ServiceItem[] = [
   {
@@ -14,25 +18,25 @@ const services: ServiceItem[] = [
     icon: Wrench,
     title: "Repairs & Patching",
     body: "Leak tracing, shingle repair, and flashing fixes — typically same-week service.",
-    img: "https://images.unsplash.com/photo-1632759145355-8b8f3ab9c693?auto=format&fit=crop&w=1200&q=80",
+    img: roofingRepairs,
   },
   {
     icon: CloudRain,
     title: "Gutters & Drainage",
     body: "Seamless gutters, downspouts, and guards that move water away from your home.",
-    img: "https://images.unsplash.com/photo-1503594384566-461fe158e797?auto=format&fit=crop&w=1200&q=80",
+    img: roofingGutters,
   },
   {
     icon: Hammer,
     title: "Storm Damage",
     body: "Emergency tarping, hail and wind assessments, and full insurance claim support.",
-    img: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+    img: roofingStorm,
   },
   {
     icon: ShieldCheck,
     title: "Inspections & Warranty",
     body: "Annual roof health reports and transferable workmanship warranties on every job.",
-    img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1200&q=80",
+    img: roofingInspection,
   },
 ];
 
