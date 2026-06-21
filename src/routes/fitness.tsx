@@ -68,6 +68,7 @@ export const Route = createFileRoute("/fitness")({
   component: () => (
     <main className="overflow-x-clip bg-[#0a0d0a]" style={{ ["--service-step-icon-bg" as string]: "rgb(198 255 61 / 0.1)" } as React.CSSProperties}>
       <ServicesSection services={services} theme={theme} />
+      <section className="h-screen w-full bg-[#0a0d0a]" aria-hidden="true" />
     </main>
   ),
 });
