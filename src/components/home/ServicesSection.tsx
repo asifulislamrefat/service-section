@@ -28,6 +28,8 @@ export type ServicesTheme = {
   accentStrong: string;  // --brand-yellow-strong
   /** tailwind bg for the small icon chip on the cards */
   iconChipClass: string;
+  /** optional class applied to card heading (h3) */
+  headingClass?: string;
 };
 
 export function ServicesSection({
@@ -197,7 +199,7 @@ export function ServicesSection({
                         <Icon className="size-5" strokeWidth={2} />
                       </div>
                       <div>
-                        <h3 className="font-display text-xl font-medium leading-tight tracking-[-0.02em]">
+                        <h3 className={`font-display text-xl font-medium leading-tight tracking-[-0.02em] ${theme.headingClass ?? ""}`}>
                           {title}
                         </h3>
                         <p className="mt-2 text-sm leading-6 opacity-70">{body}</p>
