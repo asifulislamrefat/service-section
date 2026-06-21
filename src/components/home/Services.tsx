@@ -132,8 +132,8 @@ export function Services() {
             United Health — Comprehensive Care for Your Entire Family
           </h1>
           <p className="mx-auto mt-5 text-base leading-6 tracking-[-0.02em] text-muted-foreground">
-            From everyday checkups to specialized care, everything your&nbsp;
-            family needs in one place.
+            From everyday checkups to specialized care, everything{"\u00a0"}
+            your{"\u00a0"} family needs in one place.
           </p>
         </div>
 
