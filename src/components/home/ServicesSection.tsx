@@ -202,6 +202,16 @@ export function ServicesSection({
                         </h3>
                         <p className="mt-2 text-sm leading-6 opacity-70">{body}</p>
                       </div>
+                      <a
+                        href="#"
+                        className="inline-flex w-fit items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium tracking-[-0.01em] text-white transition-transform duration-200 hover:-translate-y-0.5"
+                        style={{ backgroundColor: theme.accentStrong }}
+                      >
+                        Learn more
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <path d="M5 12h14M13 5l7 7-7 7" />
+                        </svg>
+                      </a>
                     </div>
                     <div className="overflow-hidden rounded-xl">
                       <img
