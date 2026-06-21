@@ -43,16 +43,16 @@ const services: ServiceItem[] = [
 
 const theme: ServicesTheme = {
   eyebrow: "Train with us",
-  heading: "Every workout. Every goal. One studio.",
-  sub: "Strength, conditioning, and coaching built around how you actually want to move.",
-  sectionClass: "bg-[#0f1410]",
-  panelClass: "bg-[#172019]",
-  copyClass: "bg-[#1f2a22]",
-  cardClass: "bg-[#1f2a22]",
-  textClass: "text-[#f3f7f2]",
-  accent: "#7dffa1",
-  accentStrong: "#22e07a",
-  iconChipClass: "bg-[#7dffa1] text-black",
+  heading: <span className="text-white">Every workout. Every goal. One studio.</span>,
+  sub: <span className="text-white/60">Strength, conditioning, and coaching built around how you actually want to move.</span>,
+  sectionClass: "bg-[#0a0d0a]",
+  panelClass: "bg-[#11150f]",
+  copyClass: "bg-[#161b14]",
+  cardClass: "bg-[#161b14]",
+  textClass: "text-white",
+  accent: "#c6ff3d",
+  accentStrong: "#b6f000",
+  iconChipClass: "bg-[#c6ff3d] text-black",
 };
 
 export const Route = createFileRoute("/fitness")({
