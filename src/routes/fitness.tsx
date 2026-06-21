@@ -2,51 +2,57 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Dumbbell, Flame, HeartPulse, Bike, Salad } from "lucide-react";
 import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/components/home/ServicesSection";
 
+import strengthImg from "@/assets/fitness-strength.jpg";
+import hiitImg from "@/assets/fitness-hiit.jpg";
+import coachingImg from "@/assets/fitness-coaching.jpg";
+import cycleImg from "@/assets/fitness-cycle.jpg";
+import nutritionImg from "@/assets/fitness-nutrition.jpg";
+
 const services: ServiceItem[] = [
   {
     icon: Dumbbell,
     title: "Strength Training",
     body: "Programmed barbell and accessory work to build real, lasting strength.",
-    img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    img: strengthImg,
   },
   {
     icon: Flame,
     title: "HIIT & Conditioning",
     body: "45-minute interval classes that torch calories and sharpen your engine.",
-    img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
+    img: hiitImg,
   },
   {
     icon: HeartPulse,
     title: "1:1 Coaching",
     body: "Private programming with a dedicated coach, weekly check-ins, and form review.",
-    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80",
+    img: coachingImg,
   },
   {
     icon: Bike,
     title: "Cycle Studio",
     body: "Beat-driven indoor cycling on premium bikes with real-time power metrics.",
-    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80",
+    img: cycleImg,
   },
   {
     icon: Salad,
     title: "Nutrition Coaching",
     body: "Habit-based nutrition plans that fit your life — no fad diets, ever.",
-    img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80",
+    img: nutritionImg,
   },
 ];
 
 const theme: ServicesTheme = {
   eyebrow: "Train with us",
-  heading: "Every workout. Every goal. One studio.",
-  sub: "Strength, conditioning, and coaching built around how you actually want to move.",
-  sectionClass: "bg-[#0f1410]",
-  panelClass: "bg-[#172019]",
-  copyClass: "bg-[#1f2a22]",
-  cardClass: "bg-[#1f2a22]",
-  textClass: "text-[#f3f7f2]",
-  accent: "#7dffa1",
-  accentStrong: "#22e07a",
-  iconChipClass: "bg-[#7dffa1] text-black",
+  heading: <span className="text-white">Every workout. Every goal. One studio.</span>,
+  sub: <span className="text-white/60">Strength, conditioning, and coaching built around how you actually want to move.</span>,
+  sectionClass: "bg-[#0a0d0a]",
+  panelClass: "bg-[#11150f]",
+  copyClass: "bg-[#161b14]",
+  cardClass: "bg-[#161b14]",
+  textClass: "text-white",
+  accent: "#c6ff3d",
+  accentStrong: "#b6f000",
+  iconChipClass: "bg-[#c6ff3d] text-black",
 };
 
 export const Route = createFileRoute("/fitness")({
@@ -57,7 +63,7 @@ export const Route = createFileRoute("/fitness")({
     ],
   }),
   component: () => (
-    <main className="overflow-x-clip bg-[#0f1410]">
+    <main className="overflow-x-clip bg-[#0a0d0a]">
       <ServicesSection services={services} theme={theme} />
     </main>
   ),
