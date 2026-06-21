@@ -128,9 +128,9 @@ export function Services() {
       <div className="mx-auto flex max-w-[1176px] flex-col items-center gap-16">
         <div className="mx-auto max-w-[532px] text-center">
           <SectionEyebrow>Our Services</SectionEyebrow>
-          <h2 className="mt-5 font-display text-[clamp(2rem,4.2vw,3rem)] font-medium leading-[1.16] tracking-[-0.06em]">
-            Comprehensive Care Under One Roof
-          </h2>
+          <h1 className="mt-5 font-display text-[clamp(2rem,4.2vw,3rem)] font-medium leading-[1.16] tracking-[-0.06em]">
+            United Health — Comprehensive Care for Your Entire Family
+          </h1>
           <p className="mx-auto mt-5 text-base leading-6 tracking-[-0.02em] text-muted-foreground">
             From everyday checkups to specialized care, everything your&nbsp;
             family needs in one place.
@@ -210,6 +210,7 @@ export function Services() {
                   </div>
                   <a
                     href="#"
+                    aria-label={`Learn more about ${title}`}
                     className="inline-flex w-fit items-center gap-1.5 rounded-full bg-foreground px-4 py-2 text-sm font-medium tracking-[-0.01em] text-background transition-transform duration-200 hover:-translate-y-0.5"
                   >
                     Learn more

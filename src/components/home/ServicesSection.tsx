@@ -133,9 +133,9 @@ export function ServicesSection({
       <div className="mx-auto flex max-w-[1176px] flex-col items-center gap-16">
         <div className="mx-auto max-w-[640px] text-center">
           <SectionEyebrow className={theme.eyebrowClass}>{theme.eyebrow}</SectionEyebrow>
-          <h2 className="mt-5 font-display text-[clamp(2rem,4.2vw,3rem)] font-medium leading-[1.16] tracking-[-0.06em]">
+          <h1 className="mt-5 font-display text-[clamp(2rem,4.2vw,3rem)] font-medium leading-[1.16] tracking-[-0.06em]">
             {theme.heading}
-          </h2>
+          </h1>
           <p className="mx-auto mt-5 text-base leading-6 tracking-[-0.02em] opacity-70">
             {theme.sub}
           </p>
@@ -210,6 +210,7 @@ export function ServicesSection({
                       </div>
                       <a
                         href="#"
+                        aria-label={`Learn more about ${title}`}
                         className={`inline-flex w-fit items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium tracking-[-0.01em] transition-transform duration-200 hover:-translate-y-0.5 ${theme.buttonTextClass ?? "text-white"}`}
                         style={{ backgroundColor: theme.accentStrong }}
                       >

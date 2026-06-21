@@ -69,9 +69,26 @@ const theme: ServicesTheme = {
 export const Route = createFileRoute("/agency")({
   head: () => ({
     meta: [
-      { title: "Services — Northbeam Studio" },
-      { name: "description", content: "Design, development, brand, and growth marketing from a single studio." },
+      { title: "Northbeam Studio — Design, Build, and Grow Your Brand" },
+      { name: "description", content: "A small agency that ships big work — design, web development, brand, growth marketing, and motion under one studio." },
+      { property: "og:title", content: "Northbeam Studio — Design, Build, and Grow Your Brand" },
+      { property: "og:description", content: "Strategy, design, code and marketing in one tight loop." },
+      { property: "og:url", content: "https://service-section.lovable.app/agency" },
+      { name: "twitter:title", content: "Northbeam Studio — Design, Build, and Grow Your Brand" },
+      { name: "twitter:description", content: "Strategy, design, code and marketing in one tight loop." },
     ],
+    links: [{ rel: "canonical", href: "https://service-section.lovable.app/agency" }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        name: "Northbeam Studio",
+        description: "Design, web development, brand, growth marketing, and motion studio.",
+        url: "https://service-section.lovable.app/agency",
+        makesOffer: services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.title, description: s.body } })),
+      }),
+    }],
   }),
   component: () => (
     <main
