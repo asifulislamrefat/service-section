@@ -57,9 +57,26 @@ const theme: ServicesTheme = {
 export const Route = createFileRoute("/roofing")({
   head: () => ({
     meta: [
-      { title: "Services — Ridgeline Roofing Co." },
-      { name: "description", content: "Roof replacement, repairs, gutters, and storm damage repair from a family-owned crew." },
+      { title: "Ridgeline Roofing Co. — Family-Owned Roofing and Repairs" },
+      { name: "description", content: "Roof replacement, repairs, gutters, and storm damage from a family-owned crew with a 25-year workmanship warranty." },
+      { property: "og:title", content: "Ridgeline Roofing Co. — Family-Owned Roofing and Repairs" },
+      { property: "og:description", content: "Honest roofing, done right the first time. Family-owned, fully insured, 25-year warranty." },
+      { property: "og:url", content: "https://service-section.lovable.app/roofing" },
+      { name: "twitter:title", content: "Ridgeline Roofing Co. — Family-Owned Roofing and Repairs" },
+      { name: "twitter:description", content: "Honest roofing, done right the first time. Family-owned, fully insured, 25-year warranty." },
     ],
+    links: [{ rel: "canonical", href: "https://service-section.lovable.app/roofing" }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        name: "Ridgeline Roofing Co.",
+        description: "Family-owned roofing: replacement, repairs, gutters, storm damage, and inspections.",
+        url: "https://service-section.lovable.app/roofing",
+        makesOffer: services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.title, description: s.body } })),
+      }),
+    }],
   }),
   component: () => (
     <main className="overflow-x-clip bg-[#f6f1ea]" style={{ ["--service-step-icon-bg" as string]: "#ece3d4" } as React.CSSProperties}>
