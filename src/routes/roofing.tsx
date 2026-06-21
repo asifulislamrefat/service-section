@@ -64,6 +64,7 @@ export const Route = createFileRoute("/roofing")({
   component: () => (
     <main className="overflow-x-clip bg-[#f6f1ea]" style={{ ["--service-step-icon-bg" as string]: "#ece3d4" } as React.CSSProperties}>
       <ServicesSection services={services} theme={theme} />
+      <section className="h-screen" aria-hidden="true" />
     </main>
   ),
 });
