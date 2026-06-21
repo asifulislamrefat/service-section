@@ -63,7 +63,7 @@ export const Route = createFileRoute("/fitness")({
     ],
   }),
   component: () => (
-    <main className="overflow-x-clip bg-[#0f1410]">
+    <main className="overflow-x-clip bg-[#0a0d0a]">
       <ServicesSection services={services} theme={theme} />
     </main>
   ),
