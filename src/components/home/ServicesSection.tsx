@@ -28,6 +28,8 @@ export type ServicesTheme = {
   accentStrong: string;  // --brand-yellow-strong
   /** tailwind bg for the small icon chip on the cards */
   iconChipClass: string;
+  /** optional class applied to card heading (h3) */
+  headingClass?: string;
 };
 
 export function ServicesSection({
