@@ -1,0 +1,10 @@
+# Service Section
+
+> A showcase of distinctive service-section design themes across different industries — healthcare, fitness, agency, and roofing — built as reusable layout references.
+
+## Pages
+
+- [Healthcare](/): Comprehensive care services with a scroll-driven stack layout.
+- [Fitness](/fitness): Fitness studio services theme.
+- [Agency](/agency): Creative agency services theme.
+- [Roofing](/roofing): Roofing company services theme.
