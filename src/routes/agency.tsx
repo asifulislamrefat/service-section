@@ -3,6 +3,7 @@ import { Palette, Code2, Megaphone, LineChart, Sparkles } from "lucide-react";
 import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/components/home/ServicesSection";
 import uiuxImg from "@/assets/agency-uiux.jpg";
 import webdevImg from "@/assets/agency-webdev.jpg";
+import brandImg from "@/assets/agency-brand.jpg";
 
 const services: ServiceItem[] = [
   {
@@ -21,7 +22,7 @@ const services: ServiceItem[] = [
     icon: Megaphone,
     title: "Brand & Identity",
     body: "Logos, voice, and visual systems that make brands unmistakable.",
-    img: "https://images.unsplash.com/photo-1600195077909-46e573870d99?auto=format&fit=crop&w=1200&q=80",
+    img: brandImg,
   },
   {
     icon: LineChart,
