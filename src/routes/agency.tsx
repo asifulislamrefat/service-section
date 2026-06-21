@@ -69,8 +69,12 @@ export const Route = createFileRoute("/agency")({
     ],
   }),
   component: () => (
-    <main className="overflow-x-clip bg-[#0a0618]">
+    <main
+      className="overflow-x-clip bg-[#0a0618]"
+      style={{ ["--service-step-icon-bg" as never]: "rgba(255,255,255,0.1)" }}
+    >
       <ServicesSection services={services} theme={theme} />
+      <section aria-hidden="true" className="h-screen w-full bg-[#0a0618]" />
     </main>
   ),
 });
