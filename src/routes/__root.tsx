@@ -120,6 +120,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <SmoothScroll />
       <Outlet />
+      <FloatingNav />
     </QueryClientProvider>
   );
 }
