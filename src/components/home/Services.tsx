@@ -180,7 +180,7 @@ export function Services() {
             const itemProgress = activeFloat - idx;
             const distance = Math.abs(itemProgress);
             const isVisible = distance < 1.35;
-            const translateY = itemProgress < 0 ? 88 + Math.abs(itemProgress) * 72 : -64 * itemProgress;
+            const translateY = itemProgress < 0 ? -itemProgress * 88 : -itemProgress * 64;
             const rotate = itemProgress * -4;
             const scale = Math.max(0.86, 1 - Math.abs(itemProgress) * 0.08);
             const fadeDistance = Math.max(0, distance - 0.18);
