@@ -30,6 +30,8 @@ export type ServicesTheme = {
   iconChipClass: string;
   /** optional class applied to card heading (h3) */
   headingClass?: string;
+  /** optional text/icon color class applied to the card CTA button */
+  buttonTextClass?: string;
 };
 
 export function ServicesSection({
