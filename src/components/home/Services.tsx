@@ -210,6 +210,7 @@ export function Services() {
                   </div>
                   <a
                     href="#"
+                    aria-label={`Learn more about ${title}`}
                     className="inline-flex w-fit items-center gap-1.5 rounded-full bg-foreground px-4 py-2 text-sm font-medium tracking-[-0.01em] text-background transition-transform duration-200 hover:-translate-y-0.5"
                   >
                     Learn more
