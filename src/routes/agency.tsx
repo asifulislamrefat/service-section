@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Palette, Code2, Megaphone, LineChart, Sparkles } from "lucide-react";
 import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/components/home/ServicesSection";
 import uiuxImg from "@/assets/agency-uiux.jpg";
+import webdevImg from "@/assets/agency-webdev.jpg";
 
 const services: ServiceItem[] = [
   {
