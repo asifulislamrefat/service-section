@@ -40,10 +40,14 @@ const theme: ServicesTheme = {
   heading: (
     <span className="text-white">
       <span className="font-serif italic font-normal">Design</span>, build, and{" "}
-      <span className="font-serif italic font-normal">grow</span> — under one studio
+      <span className="font-serif italic font-normal whitespace-pre-wrap">{"\n"}grow</span> — under one studio
     </span>
   ),
-  sub: "A small agency that ships big work. Strategy, design, code, and marketing in one tight loop.",
+  sub: (
+    <span className="whitespace-pre-wrap">
+      A small agency that ships big work. Strategy, design, code and&nbsp;{"\n"}marketing in one tight loop.
+    </span>
+  ),
   sectionClass: "bg-[#0a0618]",
   panelClass: "bg-[#120a2a] ring-1 ring-inset ring-violet-500/20",
   copyClass: "bg-[#160d33]/80 ring-1 ring-inset ring-violet-500/25",
