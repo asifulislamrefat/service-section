@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ToggleRight, X, Stethoscope, Dumbbell, Sparkles, Home } from "lucide-react";
+import { Repeat, X, Stethoscope, Dumbbell, Sparkles, Home } from "lucide-react";
 
 const pages = [
   { to: "/", label: "Medical", icon: Stethoscope },
