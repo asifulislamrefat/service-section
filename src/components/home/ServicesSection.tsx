@@ -197,7 +197,7 @@ export function ServicesSection({
                         <Icon className="size-5" strokeWidth={2} />
                       </div>
                       <div>
-                        <h3 className="font-display text-xl font-medium leading-tight tracking-[-0.02em]">
+                        <h3 className="font-display text-xl font-medium leading-tight tracking-[-0.02em] text-white">
                           {title}
                         </h3>
                         <p className="mt-2 text-sm leading-6 opacity-70">{body}</p>
