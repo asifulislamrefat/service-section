@@ -19,6 +19,7 @@ function Index() {
   return (
     <main className="overflow-x-clip bg-background">
       <Services />
+      <section aria-hidden="true" className="h-screen w-full bg-background" />
     </main>
   );
 }
