@@ -2,36 +2,42 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Dumbbell, Flame, HeartPulse, Bike, Salad } from "lucide-react";
 import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/components/home/ServicesSection";
 
+import strengthImg from "@/assets/fitness-strength.jpg";
+import hiitImg from "@/assets/fitness-hiit.jpg";
+import coachingImg from "@/assets/fitness-coaching.jpg";
+import cycleImg from "@/assets/fitness-cycle.jpg";
+import nutritionImg from "@/assets/fitness-nutrition.jpg";
+
 const services: ServiceItem[] = [
   {
     icon: Dumbbell,
     title: "Strength Training",
     body: "Programmed barbell and accessory work to build real, lasting strength.",
-    img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    img: strengthImg,
   },
   {
     icon: Flame,
     title: "HIIT & Conditioning",
     body: "45-minute interval classes that torch calories and sharpen your engine.",
-    img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
+    img: hiitImg,
   },
   {
     icon: HeartPulse,
     title: "1:1 Coaching",
     body: "Private programming with a dedicated coach, weekly check-ins, and form review.",
-    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80",
+    img: coachingImg,
   },
   {
     icon: Bike,
     title: "Cycle Studio",
     body: "Beat-driven indoor cycling on premium bikes with real-time power metrics.",
-    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80",
+    img: cycleImg,
   },
   {
     icon: Salad,
     title: "Nutrition Coaching",
     body: "Habit-based nutrition plans that fit your life — no fad diets, ever.",
-    img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80",
+    img: nutritionImg,
   },
 ];
 
