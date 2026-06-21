@@ -61,9 +61,26 @@ const theme: ServicesTheme = {
 export const Route = createFileRoute("/fitness")({
   head: () => ({
     meta: [
-      { title: "Services — Foundry Strength Co." },
-      { name: "description", content: "Strength, HIIT, cycle, and 1:1 coaching in one premium studio." },
+      { title: "Foundry Strength Co. — Strength, HIIT, and Private Coaching" },
+      { name: "description", content: "Strength training, HIIT, cycle, and 1:1 coaching in one premium studio built around how you actually want to move." },
+      { property: "og:title", content: "Foundry Strength Co. — Strength, HIIT, and Private Coaching" },
+      { property: "og:description", content: "Strength, conditioning, and coaching built around how you actually want to move." },
+      { property: "og:url", content: "https://service-section.lovable.app/fitness" },
+      { name: "twitter:title", content: "Foundry Strength Co. — Strength, HIIT, and Private Coaching" },
+      { name: "twitter:description", content: "Strength, conditioning, and coaching built around how you actually want to move." },
     ],
+    links: [{ rel: "canonical", href: "https://service-section.lovable.app/fitness" }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        name: "Foundry Strength Co.",
+        description: "Premium fitness studio: strength, HIIT, cycle, 1:1 coaching, and nutrition.",
+        url: "https://service-section.lovable.app/fitness",
+        makesOffer: services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.title, description: s.body } })),
+      }),
+    }],
   }),
   component: () => (
     <main className="overflow-x-clip bg-[#0a0d0a]" style={{ ["--service-step-icon-bg" as string]: "rgb(198 255 61 / 0.1)" } as React.CSSProperties}>
