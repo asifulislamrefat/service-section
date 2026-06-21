@@ -5,6 +5,7 @@ import uiuxImg from "@/assets/agency-uiux.jpg";
 import webdevImg from "@/assets/agency-webdev.jpg";
 import brandImg from "@/assets/agency-brand.jpg";
 import growthImg from "@/assets/agency-growth.jpg";
+import motionImg from "@/assets/agency-motion.jpg";
 
 const services: ServiceItem[] = [
   {
@@ -35,7 +36,7 @@ const services: ServiceItem[] = [
     icon: Sparkles,
     title: "Motion & 3D",
     body: "Scroll-driven storytelling, micro-interactions, and product reels.",
-    img: "https://images.unsplash.com/photo-1633177317976-3f9bc45e1d1d?auto=format&fit=crop&w=1200&q=80",
+    img: motionImg,
   },
 ];
 
