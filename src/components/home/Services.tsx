@@ -219,14 +219,14 @@ export function Services() {
                     </svg>
                   </a>
                 </div>
-                <div className="self-center overflow-hidden rounded-xl">
+                <div className="overflow-hidden rounded-xl">
                   <img
                     src={img}
                     alt={title}
                     width={720}
-                    height={360}
+                    height={420}
                     loading="lazy"
-                    className="services-stack__img aspect-[16/10] max-h-[300px] w-full object-cover"
+                    className="services-stack__img aspect-[16/9] h-full w-full object-cover"
                   />
                 </div>
               </article>
