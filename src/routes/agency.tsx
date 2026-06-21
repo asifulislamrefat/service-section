@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Palette, Code2, Megaphone, LineChart, Sparkles } from "lucide-react";
 import { ServicesSection, type ServiceItem, type ServicesTheme } from "@/components/home/ServicesSection";
 import uiuxImg from "@/assets/agency-uiux.jpg";
+import webdevImg from "@/assets/agency-webdev.jpg";
 
 const services: ServiceItem[] = [
   {
@@ -14,7 +15,7 @@ const services: ServiceItem[] = [
     icon: Code2,
     title: "Web Development",
     body: "Fast, accessible, SEO-ready websites built on modern stacks.",
-    img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80",
+    img: webdevImg,
   },
   {
     icon: Megaphone,
