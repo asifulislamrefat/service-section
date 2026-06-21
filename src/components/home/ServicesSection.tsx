@@ -32,6 +32,8 @@ export type ServicesTheme = {
   headingClass?: string;
   /** optional text/icon color class applied to the card CTA button */
   buttonTextClass?: string;
+  /** optional class applied to the section eyebrow */
+  eyebrowClass?: string;
 };
 
 export function ServicesSection({
