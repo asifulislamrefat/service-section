@@ -132,7 +132,8 @@ export function Services() {
             Comprehensive Care Under One Roof
           </h2>
           <p className="mx-auto mt-5 text-base leading-6 tracking-[-0.02em] text-muted-foreground">
-            From everyday checkups to specialized care, everything your family needs in one place.
+            From everyday checkups to specialized care, everything your&nbsp;
+            family needs in one place.
           </p>
         </div>
 
