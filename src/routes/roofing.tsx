@@ -42,8 +42,8 @@ const services: ServiceItem[] = [
 
 const theme: ServicesTheme = {
   eyebrow: "Our services",
-  heading: "Honest roofing. Done right the first time.",
-  sub: "Family-owned, fully insured, and backed by a 25-year workmanship warranty on every roof we install.",
+  heading: <>Honest roofing.{"\u00a0"}<br />Done right the first time.</>,
+  sub: <>Family-owned, fully insured, and backed by a 25-year workmanship{"\u00a0"}<br />warranty on every roof we install.</>,
   sectionClass: "bg-[#f6f1ea]",
   panelClass: "bg-[#ece3d4]",
   copyClass: "bg-[#fbf7f1]",
